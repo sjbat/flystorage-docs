@@ -18,12 +18,13 @@ export default defineConfig({
 				light: './src/assets/flystorage.svg',
 				dark: './src/assets/flystorage-dark.svg',
 			},
-			title: 'Flystorage',
+			title: 'Projekt',
 			components: {
 				Pagination: './src/components/Pagination.astro',
 			},
 			social: {
-				github: 'https://github.com/duna-oss/flystorage',
+				mastodon: 'https://pol.social/@sebastian',
+				github: 'https://github.com/sjbat/flystorage',
 			},
 			sidebar: [
 				{
@@ -47,11 +48,20 @@ export default defineConfig({
 					collapsed: false,
 					autogenerate: { directory: 'tools' },
 				},
+				{
+					label: 'Blog',
+					collapsed: false,
+					autogenerate: { directory: 'blog' },
+				},
+				
 			],
 			customCss: [
-				'@fontsource/lato/400.css',
-				'@fontsource/lato/700.css',
-				'@fontsource/lato/900.css',
+				//'@fontsource/lato/400.css',
+				//'@fontsource/lato/700.css',
+				//'@fontsource/lato/900.css',
+				'@fontsource-variable/inter/standard.css',
+				//'@fontsource-variable/inter/700.css',
+				//'@fontsource-variable/inter/900.css',
 				'./src/tailwind.css',
 			],
 		}),

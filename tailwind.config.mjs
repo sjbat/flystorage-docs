@@ -14,9 +14,10 @@ export default {
 		},
 		fontFamily: {
 			// Your preferred text font. Starlight uses a system font stack by default.
-			sans: ['Lato'],
+			sans: ['Inter Variable'],
 			// // Your preferred code font. Starlight uses system monospace fonts by default.
 			// mono: ['"IBM Plex Mono"'],
+			//sjb https://fontsource.org/fonts/jetbrains-mono
 		},
 	},
 	plugins: [starlightPlugin()],
